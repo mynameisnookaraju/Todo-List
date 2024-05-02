@@ -1,0 +1,26 @@
+<%- include('Paritials/header.ejs') %>
+
+<header>
+    <p><%= day %></p>
+</header>
+
+<div class="list-items">
+    <%newListItems.forEach((item) => {%>
+        <form action="/delete" method="post">
+            <div class="task1">
+                <input type="checkbox" name="checkbox" value="<%= item._id %>" onchange="this.form.submit()">
+                <p class="para"><%= item.name %></p>
+            </div>
+        </form>
+           
+    <%});%>
+    </div>
+
+<section class="input">
+    <form class="justform"  action="/submit" method="post" >
+        <input class="text" type="text" name="task" placeholder="Type Your Task Here." autocomplete="off" required>
+        <button class="button" type="submit" name="list" value="<%= day %>">+</button>
+    </form>
+</section>
+
+<%- include('Paritials/footer.ejs') %>

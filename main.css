@@ -1,0 +1,232 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+   height: 100vh;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color:black;
+    position: fixed;
+    bottom: 0%;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    position: sticky;
+    height: 50px;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size: 1rem;
+    
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(134, 129, 129);
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.nav-bar ul li a:hover{
+    color: white;
+    background-color: black;
+}
+
+.nav-bar h1{
+    color: rgb(161, 155, 155);
+    font-size: 2.5rem;
+    text-shadow: 0 0 2.5px rgb(59, 57, 57);
+    animation: logoanimation  5s infinite ;
+}
+
+header{
+    width: 40%;
+    margin: auto;
+    background-color: black;
+    display: flex; 
+    justify-content: center;
+   align-items: center;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: azure;
+    height: 65px;
+}
+
+header p{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+
+.list-items{
+    background-color: rgb(243, 243, 243);
+    width: 40%;
+    height: 65vh;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgb(140, 138, 138);
+    overflow: auto;
+    word-break: break-all;
+}
+
+.task1{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid rgb(180, 172, 172);
+    display: flex;
+    font-size: 1.1rem;
+    gap: 10px;
+}
+
+.input{
+    width:40%;
+    margin: auto;
+}
+
+
+.justform{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.justform:hover{
+    border: 1px solid dodgerblue;
+}
+
+
+.justform .text{
+    width: 85%;
+    height: 50px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 0.5px solid dodgerblue;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.justform .text:focus{
+    box-shadow: 0 0 8px dodgerblue;
+}
+
+
+.justform button{
+    height: 53.5px;
+    width: 15%;
+    border: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(147, 101, 189);
+    color: white;
+    font-size: 50px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;  
+}
+
+.justform button:active{
+    background-color: rgb(204, 142, 27);
+    color: black;
+}
+
+
+input:checked + p{
+    text-decoration: line-through;
+    text-decoration-color: rgb(185, 37, 37);
+    text-decoration-thickness: 1.5px;
+}
+
+
+@keyframes logoanimation{
+    0%{
+        color: rgb(161, 155, 155);
+    }
+
+    20%{
+        color: red;
+    }
+
+    40%{
+        color: yellowgreen;
+    }
+
+    60%{
+        color: blueviolet;
+    }
+
+    80%{
+        color: blue;
+    }
+
+    100%{
+        color: orange;
+    }
+}
+
+@media (max-width: 1080px) {
+    .list-items{
+        width: 90%;
+        height: 74.5vh;
+        margin-bottom: 10px;
+    }
+
+    header{
+        width: 90%;
+    }
+
+    .input{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .list-items{
+        height: 75vh;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 1921px) {
+    .list-items{
+        width: 50%;
+        height: 75vh;
+        margin-bottom: 10px;
+    }
+
+    header{
+        width: 50%;
+    }
+
+    .input{
+        width: 50%;
+    }
+
+   
+}
+
+
+
